@@ -1,25 +1,28 @@
 
-project structure:
+### project structure:
 
-app --- front-end coding
-server --- server-end coding
-tasks --- auto stream
-    util/args.js used to config the CLI argments 
-    scripts.js used to deal with js file in tasks folder --- constructure scripts
+- The overall structure:
 
-app: used to store the front-end coding.
+    1. 'app/' -- front-end coding
+    2. 'server/' -- server-end coding, also including the final coding in 'public/' by gulp.js execute.
+    3. 'tasks/' -- coding used to deal with project structure in gulp methods.
+    4. 'gulpfile.babel.js' -- the entrance file, which loads all files under 'tasks' folder.
+    5. '.babelrc' -- used to deal with the ej6 coding.
+    6. 'package.json' -- used to deal with package dependencies.
+    7. '.gitignore' -- used to ignore the files or folders when upload to github.
 
-server: used to store the server-end coding
+- Structure process:
+    
+    1. input CLI 'express -e' to create the default 'server' folder.
+    2. create 'app' folder to create the front-end coding, including .css, .js and .ejs.
+    3. create 'tasks' folder coding the gulp methods to complete the project structure.
+    4. in the folder 'tasks', we create the different tasks to focus on different coding files, and ensure that the front-end page will re-render whenever the coding files change, as well as the original files uglified and re-stored. 
 
-"express -e" to render the .ejs files and also config the default directory
 
-tasks used to store the aumatic stream coding
 
-package.json used to deal with package dependencies
 
-.babelrc used to deal with the ej6 coding
 
-gulpfile.babel.js used to deal with gulp tasks in es6 coding 
+
 
 
 
