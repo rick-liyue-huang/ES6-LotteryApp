@@ -49,20 +49,27 @@
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	__webpack_require__(2);
 
-	var Test = function Test() {
-		_classCallCheck(this, Test);
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
-		this.a = 'hello world';
-	};
+	"use strict";
 
-	var test = new Test();
-	document.body.innerHTML = test.a;
+	function test() {
+
+		for (var i = 1; i < 3; i++) {
+			console.log(i);
+		}
+		console.log(i);
+	}
+
+	test();
 
 /***/ })
 /******/ ]);

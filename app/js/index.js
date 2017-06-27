@@ -1,10 +1,4 @@
 
 
-class Test {
-	constructor(){
-		this.a = 'hello world';
-	}
-}
+import './class/l1.js';
 
-let test  = new Test();
-document.body.innerHTML = test.a;
