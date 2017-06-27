@@ -17,6 +17,10 @@
     2. create 'app' folder to create the front-end coding, including .css, .js and .ejs.
     3. create 'tasks' folder coding the gulp methods to complete the project structure.
     4. in the folder 'tasks', we create the different tasks to focus on different coding files, and ensure that the front-end page will re-render whenever the coding files change, as well as the original files uglified and re-stored. 
+- Porject Target:
+    
+    All ES6 codings are in 'app/' directory, and the purpose is to be familiar with the ES6 syntax and modularization structure.
+    
 
 
 
