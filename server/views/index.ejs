@@ -1,13 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>es6</title>
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+    <meta charset="utf-8">
+    <title>ES6-Lottery</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/lottery.css">
+    <style media="screen">
+        #countdown em {
+            font-weight: bold;
+            color: #c33333;
+        }
+    </style>
 </head>
+
 <body>
-	
-	
-	<div>dhdsj</div>
-	<script src="../js/index.js"></script>
+    <div id="doc3" class="syy">
+        <div id="bd" class="kpc-bd">
+            <div class="mod-cz-hd">
+                <div class="hd clearfix">
+                    <div class="cz-logo cz-syylogo">
+                        <a href="#"></a>
+                    </div>
+                    <h1 class="cz-name">Select 5 From 11 <span>&nbsp; Draw&nbsp;<em id="curr_issue"> **</em></span></h1>
+                    <ul class="cz-params cz-params-kp">
+                        <li>Left Time:</li>
+                        <li id="countdown"></li>
+                        <li>
+                            Time：9:00～22:00（78 Draws）
+                        </li>
+                    </ul>
+                    <span class="label label-important bg-ccc state_el">Stop Bet</span>
+                </div>
+                <div class="bd">
+                    <div class="nav-cz-main clearfix">
+                        <ul class="main">
+                            <li class="active"><a href="javascript:void(0)">Begin Bet</a></li>
+                        </ul>
+                        <div class="helper-nav">
+                            <a href="javascript:;">Help<i class="ico ico-arrow02"></i></a>
+                        </div>
+                        <ul class="quirk"></ul>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation -->
+            <div class="mod-cz-bd">
+                <div class="nav-cz-sub" style="position:relative;">
+                    <ul class="clearfix" id="plays">
+                        <li desc="R2"><a href="#">Option 2</a></li>
+                        <li desc="R3"><a href="#">Option 3</a></li>
+                        <li desc="R4"><a href="#">Option 4</a></li>
+                        <li desc="R5" class="active"><a href="#">Option 5</a></li>
+                        <li desc="R6"><a href="#">Option 6</a></li>
+                        <li desc="R7"><a href="#">Option 7</a></li>
+                        <li desc="R8"><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- main part -->
+            <div class="grid-1 clearfix">
+                
+                <div class="article">
+                    <div class="plays_box">
+                        <div class="plays">
+                            <div class="mod-select-info ssytips">
+                                <p id="zx_sm" class="plays-memo"><i class="ico ico-info-s"></i><b>How to Play:</b><span>
+                                Select 5 different number from 01～11, if match all numbers with the result, will win $<em class="red">540</em></span></p>
+                            </div>
+                            <div class="mod-select-bolls code_box">
+                                <div class="hd">
+                                    <h3 class="clearfix">
+                                      <span class="t1" id="play_tips">
+                                        <em>Please Select:</em> At least select 5 numbers
+                                      </span>
+                                      <span class="t2"><em>Condition Option</em> Quick Pick</span>
+                                    </h3>
+                                </div>
+                                <div class="bd">
+                                    <div class="tools-boll-list">
+                                        <div class="boll-item boll-item-col3 sd_zx_r5">
+                                            <div class="k">
+                                                <span class="k1">Num<span class="caret"></span></span>
+                                                <span class="k2">Missed</span>
+                                            </div>
+                                            <div class="v">
+                                                <div class="boll-list" unselectable="on" onselectstart="return false;">
+                                                    <ul class="clearfix">
+                                                        <li><em class="btn-boll">01</em><span>0</span></li>
+                                                        <li><em class="btn-boll">02</em><span>0</span></li>
+                                                        <li><em class="btn-boll">03</em><span class="red">5</span></li>
+                                                        <li><em class="btn-boll">04</em><span>1</span></li>
+                                                        <li><em class="btn-boll">05</em><span>1</span></li>
+                                                        <li><em class="btn-boll">06</em><span>2</span></li>
+                                                        <li><em class="btn-boll">07</em><span>0</span></li>
+                                                        <li><em class="btn-boll">08</em><span>3</span></li>
+                                                        <li><em class="btn-boll">09</em><span class="">0</span></li>
+                                                        <li><em class="btn-boll">10</em><span>1</span></li>
+                                                        <li><em class="btn-boll">11</em><span>0</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="t">
+                                                <div class="tool-list">
+                                                    <ul class="clearfix dxjo">
+                                                        <li><a href="#" class="btn btn-middle">All</a></li>
+                                                        <li><a href="#" class="btn btn-middle">L</a></li>
+                                                        <li><a href="#" class="btn btn-middle">S</a></li>
+                                                        <li><a href="#" class="btn btn-middle">O</a></li>
+                                                        <li><a href="#" class="btn btn-middle">E</a></li>
+                                                        <li><a href="#" class="lnk">Clear</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ft">
+                                        <p class="sel_info">You selected <b>0</b> group，total $<b>0</b>  <em></em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-select-result">
+                        <div class="hd confirm_sel_code_list" style="margin-left: 200px;text-align: left;">
+                            <button type="button" class="btn" id="confirm_sel_code"><span class="btn-large btn-slt-ok"><i class="l"><i class="r">Confirm</i></i></span></button>
+                            <a href="javascript:;" class="lnk lnk-calcel">Clear Numbers</a>
+                        </div>
+                        <div class="bd clearfix">
+                            <div class="result">
+                                <div class="content">
+                                    <ul class="clearfix codelist"></ul>
+                                </div>
+                            </div>
+                            <div class="qkmethod">
+                                <ul plays="Z1|直选">
+                                    <li><a class="btn-middle" count="1" href="#">Random 1</a></li>
+                                    <li><a class="btn-middle" count="5" href="#">Random 5</a></li>
+                                    <li><a class="btn-middle" count="10" href="#">Random 10</a></li>
+                                    <li><a class="btn-middle" count="0" href="#">Clear Table</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-select-result" id="result">
+                        <div class="ft">
+                            <div class="total">
+                                You selected: <b class="em" id="count">0</b> group, Bet <input class="text" id="mul" type="text" value="1"> time, total $<b class="em" id="money" style="display: inline-block;">0</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-submit">
+                        <button type="button" id="post_data" class="btn btn-sd"><span class="btn-large2 btn-large2-primary">Start Bet</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/index.js" charset="utf-8"></script>
 </body>
+
 </html>

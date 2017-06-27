@@ -1,4 +1,4 @@
+import 'babel-polyfill';
+import Lottery from './lottery';
 
-
-import './class/l1.js';
-
+const syy=new Lottery();
