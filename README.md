@@ -24,7 +24,7 @@
     
 - How to run:
     
-    1. Run 'npm i' under 'ES6-LotteryApp/' and 'npm i' under 'ES6-LotteryApp/server' directory in the 'terminal', and then run 'gulp --watch' to open the server end, at last, open the browser by input address 'localhost:3000'.
+    1. Run `npm i` under 'ES6-LotteryApp/' and `npm i` under 'ES6-LotteryApp/server' directory in the 'terminal', and then run `gulp --watch` to open the server end, at last, open the browser by input address 'localhost:3000'.
 
     2. In the browser, we can select the different betting numbers by multiply clicking the 0-11 numbers, singly clicking the 'quick pick' buttons, or just clicking the 'random number'. When you select the different numbers, it will show the different bonus combination.  
 
